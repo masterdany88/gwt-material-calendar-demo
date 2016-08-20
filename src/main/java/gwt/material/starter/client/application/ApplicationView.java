@@ -29,10 +29,13 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+
+import gwt.material.design.addins.client.calendar.MaterialCalendar;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.events.SearchFinishEvent;
 import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.client.ui.MaterialSearch;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -50,11 +53,16 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     @UiField
     MaterialSearch txtSearch;
+    
+    @UiField
+    MaterialRow content;
 
     @Inject
     ApplicationView(
             Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        content.add(new MaterialCalendar());
+        
         txtSearch.addCloseHandler(new CloseHandler<String>() {
             @Override
             public void onClose(CloseEvent<String> event) {

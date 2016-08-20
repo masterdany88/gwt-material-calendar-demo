@@ -85,63 +85,9 @@
         </header>
 
         <m:MaterialContainer fontSize="0.8em">
-            <m:MaterialLabel text="Today" textColor="grey" addStyleNames="{style.label}"/>
-            <!-- Collapsible -->
-            <m:MaterialCollapsible type="POPOUT" grid="s12 m6 l8">
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Travel" iconType="AIRPLANEMODE_ACTIVE" iconPosition="LEFT" textColor="purple"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Social" iconType="GROUP" iconPosition="LEFT" textColor="red"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Updates" iconType="FLAG" iconPosition="LEFT" textColor="amber"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Purchases" iconType="ADD_SHOPPING_CART" iconPosition="LEFT" textColor="brown"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="blue"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Finance" iconType="INSERT_CHART" iconPosition="LEFT" textColor="green"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-            </m:MaterialCollapsible>
+            <!-- Content -->
+            <m:MaterialRow ui:field="content"></m:MaterialRow>
+            
         </m:MaterialContainer>
 
         <!-- FAB -->
